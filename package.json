@@ -1,0 +1,28 @@
+{
+  "name": "backend-contact-list",
+  "version": "1.0.0",
+  "description": "My first backend project.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JazzRudolph/backend-contact-list.git"
+  },
+  "author": "Jazz Rudolph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JazzRudolph/backend-contact-list/issues"
+  },
+  "homepage": "https://github.com/JazzRudolph/backend-contact-list#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
