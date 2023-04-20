@@ -11,6 +11,7 @@ const getContacts = (req, res) => {
 //@access public
 
 const createContact = (req, res) => {
+    console.log("The request body is :", req.body);
     res.status(200).json({ message: "Create a new contact" });
 };
 
@@ -39,4 +40,4 @@ const deleteContact = (req, res) => {
 };
 
 
-module.exports = { getContact, createContact };
+module.exports = { getContacts, createContact, getContact, updateContact, deleteContact};
