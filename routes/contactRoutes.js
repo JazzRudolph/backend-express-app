@@ -8,8 +8,10 @@ const {
     updateContact,
     deleteContact
 } = require("../controllers/contactControllers");
+const validateToken = require("../middleware/validateTokenHandler");
 
-
+router.use(validateToken);
+    
 router.route("/").get(getContacts);
 
 router.route("/").post(createContact);
@@ -22,10 +24,3 @@ router.route("/:id").delete(deleteContact);
 
 module.exports = router;
 
-/*I THINK I CAN DELETE THIS CODE JUST HOLDING ONTO IT TO MAKE SURE!!
-const { getContacts } = require("../controllers/contactControllers");
-const { createContact } = require("../controllers/contactControllers");
-const { getContact } = require("../controllers/contactControllers");
-const { updateContact } = require("../controllers/contactControllers");
-const { deleteContact } = require("../controllers/contactControllers");
-*/
